@@ -9,9 +9,10 @@ from tempfile import TemporaryDirectory
 from typing import List, Tuple, Dict, Any, Callable
 
 import tensorflow as tf
-from tensorflow.estimator import ModeKeys, Estimator
-from tensorflow.python.training.tracking.tracking import AutoTrackable
-
+# from tensorflow.estimator import ModeKeys, Estimator
+# from tensorflow.python.training.tracking.tracking import AutoTrackable
+from tensorflow.python.trackable.autotrackable import AutoTrackable
+from tensorflow_estimator.python.estimator.estimator import Estimator, ModeKeys
 
 LOGGER = logging.getLogger(__name__)
 
